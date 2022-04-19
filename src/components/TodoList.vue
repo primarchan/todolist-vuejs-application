@@ -1,6 +1,6 @@
 <template>
   <section>
-    <ul>
+    <transition-group name="list" tag="ul">
       <li v-for="(todoItem, index) in propsdata" :key="todoItem" class="shadow">
         <i class="checkBtn fas fa-check" aria-hidden="true"></i>
         {{ todoItem }}
@@ -8,7 +8,7 @@
           <i class="far fa-trash-alt" aria-hidden="true"></i>
         </span>
       </li>
-    </ul>
+    </transition-group>
   </section>
 </template>
 
@@ -19,8 +19,9 @@ export default {
     // Trash Can 아이콘 클릭 시 삭제
     removeTodo(todoItem, index) {
       // console.log(todoItem, index);
-      localStorage.removeItem(todoItem);
-      this.todoItems.splice(index, 1);
+      // localStorage.removeItem(todoItem);
+      // this.todoItems.splice(index, 1);
+      this.$emit('removeTodo', todoItem, index);
     }
   }
 
