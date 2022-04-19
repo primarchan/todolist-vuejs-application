@@ -1,6 +1,7 @@
 # vue-todo
 
 > A Vue.js project
+> 할 일 관리 어플리케이션
 
 ## Build Setup
 
