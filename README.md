@@ -1,6 +1,6 @@
 # Vue-Todo-Project
 
-> A Vue.js project
+> Vue.js project
 > 할 일 관리 모바일 애플리케이션
 
 ## Build Setup
