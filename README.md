@@ -1,4 +1,4 @@
-# Todo-Vue-Project
+# Todo-Vue-Application
 
 > Vue.js 기반 project
 > 할 일 관리 모바일 애플리케이션
